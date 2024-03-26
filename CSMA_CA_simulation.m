@@ -1,7 +1,7 @@
 %% =========== Initial
 clear; clc
     % Packet size = 1000 | 2000 | 5000 | 8000 | 10000
-Packet_size = 8000 * 8;% get the packet size in bits (8 bits/packet) %
+Packet_size = 1000 * 8;% get the packet size in bits (8 bits/packet) %
 T = 1000 * 10^-3; % get simulation time in s %
 
 % ======= NODES
@@ -334,7 +334,7 @@ for backoff = 1:length(backoff_strategy)
     semilogx(N,utility);
     xlabel('Nodes');
     ylabel('Utilization time (s)')
-    xlim([10 300])
+    %xlim([10 400])
     title('Packet size: ', Packet_size);
     hold on;
 end

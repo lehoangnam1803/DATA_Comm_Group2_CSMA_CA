@@ -1,0 +1,115 @@
+% --------------------------
+% Document class
+% --------------------------
+\documentclass[
+A4paper,                % paper size A4
+twoside,                % onesite or twoside printing
+openright,              % doublepage cleaning ends up right side
+chapterprefix=true,     % prefix for chapter marks
+12pt,                   % font size
+headings=normal,        % size of headings
+titlepage=on            % own page for each title page
+]{book}
+
+% **************************************************
+% THESIS details
+% **************************************************
+
+\newcommand{\University}{\protect{Trường Đại học Khoa học tự nhiên, ĐHQG-HCM}}
+\newcommand{\UNIVERSITY}{\protect{TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN, ĐHQG-HCM}}
+
+\input{thesisDetails}
+
+% **************************************************
+% Settings
+% **************************************************
+
+\input{settings}
+
+% **************************************************
+% Begin document
+% **************************************************
+\begin{document}
+
+% --------------------------
+% Cover and front matter
+% --------------------------
+\frontmatter
+\pagestyle{empty}				    % no header nor footer
+\input{frontmatter/1_cover}
+%\newpage
+\cleardoublepage
+
+\input{frontmatter/2_frontpage}
+%\newpage
+\cleardoublepage
+
+\pagenumbering{roman}			    % roman page numbering 
+\pagestyle{plain}				    % empty header, just page number in footer
+% \input{frontmatter/3_dedication}
+% \cleardoublepage
+
+% \input{frontmatter/4_acknowledgement_and_funding}   % dedication & cknowledgement (optional)
+% \cleardoublepage
+
+\input{frontmatter/5_abstract}  % abstract (in English and Spanish)
+\newpage
+
+
+
+\selectlanguage{vietnamese}
+
+\setcounter{tocdepth}{3}		% define depth of toc
+\tableofcontents				% display table of contents
+
+
+\addcontentsline{toc}{section}{Danh sách hình vẽ}
+\listoffigures
+
+
+\addcontentsline{toc}{section}{Danh sách bảng}
+\listoftables
+% \newpage
+
+% \input{frontmatter/6_acronyms}
+\cleardoublepage
+
+% --------------------------
+% Main matter
+% --------------------------
+\mainmatter
+\pagenumbering{arabic}			% arabic page numbering
+\setcounter{page}{1}			% set page counter
+\pagestyle{fancy} 	            % fancy header and footer
+\parskip=7pt                    % space after each paragraph
+\parindent=10pt                  % suppress indentation of paragraphs
+
+
+% Chapters
+\include{mainmatter/chapter1}
+\input{mainmatter/chapter2}
+\include{mainmatter/chapter3}
+\include{mainmatter/chapter4}
+%\include{mainmatter/chapter5}
+%\include{mainmatter/chapter6}
+%\include{mainmatter/Danhsach}
+
+\cleardoublepage
+
+% --------------------------
+% Back matter
+% --------------------------
+\backmatter
+
+% \bibliographystyle{cas-model2-names}
+% \bibliography{references}
+% % \printbibliography[title=Referencias, heading=bibintoc]
+
+\appendix
+\include{mainmatter/x-Annexes}
+
+
+% **************************************************
+% End of document
+% **************************************************
+\end{document}

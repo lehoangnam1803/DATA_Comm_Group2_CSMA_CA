@@ -1,4 +1,5 @@
 %% =========== Initial
+%% ============================= Hoang Nam
 clear; clc
     % Packet size = 1000 | 2000 | 5000 | 8000 | 10000
 Packet_size = 1000 * 8;% get the packet size in bits (8 bits/packet) %

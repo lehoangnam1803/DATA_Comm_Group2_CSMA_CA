@@ -2,21 +2,21 @@
 
 clear; clc
     % Packet size = 1000 | 2000 | 5000 | 8000 | 10000
-Packet_size = 1000 * 8;% get the packet size in bits (8 bits/packet) %
+Packet_size = 2000 * 8;% get the packet size in bits (8 bits/packet) %
 T = 1000 * 10^-3; % get simulation time in s %
-
-% ======= NODES
-step = 10;
-len = (1:40);
-L = length(len);
-N = zeros(1, L);
-start = 10; % 10^1
-for i=1:L
-    N(i) = start*len(i);
-end
 
 % ====== Strategy
 backoff_strategy = (1:5);
+
+%% ======= CREATE NODES
+len = (1:40);
+L = length(len); %Number of simulation case
+N = zeros(1, L);
+start = 10; % 10^1
+for i=1:L
+    N(i) = start*len(i); %Number of nodes for each case
+end
+
 
 %% =======
 for backoff = 1:length(backoff_strategy)
@@ -332,7 +332,8 @@ for backoff = 1:length(backoff_strategy)
             utility(ii) = good_time / total_time;
         end
     end
-    semilogx(N,utility);
+    plot(N,utility);
+    %semilogx(N,utility);
     xlabel('Nodes');
     ylabel('Utilization time (s)')
     %xlim([10 400])
@@ -342,3 +343,4 @@ end
 grid on
 legend('Strategy 1', 'Strategy 2', 'Strategy 3', 'Strategy 4', 'Strategy 5')
 
+matlab2tikz('Packet_16000.tex');

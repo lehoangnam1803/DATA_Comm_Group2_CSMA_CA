@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.25)  26 MAR 2024 13:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.25)  27 MAR 2024 23:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1342,7 +1342,7 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T5/lmss/bx/n/15.59996'. Switching off
 (microtype)                protrusion for this font on input line 4.
 
-<figures/Logo_HCMUS.png, id=38, 903.375pt x 739.76375pt>
+<figures/Logo_HCMUS.png, id=42, 903.375pt x 739.76375pt>
 File: figures/Logo_HCMUS.png Graphic file (type png)
 <use figures/Logo_HCMUS.png>
 Package pdftex.def Info: figures/Logo_HCMUS.png  used on input line 8.
@@ -1494,7 +1494,12 @@ Package microtype Warning: I cannot find a protrusion list for font
 
 ]
 Ch\uhorn \ohorn ng 2.
-) [3]
+<figures/Chapter2/MAClayer_k2opt.pdf, id=120, 365.6862pt x 152.7306pt>
+File: figures/Chapter2/MAClayer_k2opt.pdf Graphic file (type pdf)
+<use figures/Chapter2/MAClayer_k2opt.pdf>
+Package pdftex.def Info: figures/Chapter2/MAClayer_k2opt.pdf  used on input line 20.
+(pdftex.def)             Requested size: 316.06447pt x 132.0146pt.
+) [3 <./figures/Chapter2/MAClayer_k2opt.pdf>]
 \openout2 = `mainmatter/chapter3.aux'.
 
  (mainmatter/chapter3.tex [4
@@ -1554,20 +1559,20 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2DAA08D551DACA7EED9917C659C04B27;1370.
+(rerunfilecheck)             Checksum: 6C45C12F8973198C77BB6DDFD1BC0E47;1520.
  ) 
 Here is how much of TeX's memory you used:
- 36788 strings out of 474486
- 674555 string characters out of 5757353
+ 36825 strings out of 474486
+ 675277 string characters out of 5757353
  1939542 words of memory out of 5000000
- 58213 multiletter control sequences out of 15000+600000
- 648999 words of font info for 126 fonts, out of 8000000 for 9000
+ 58228 multiletter control sequences out of 15000+600000
+ 649949 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,14n,120p,2403b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/HNAMLE/MiTek/fonts/type1/public/lm/lmss12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmss17.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on main.pdf (22 pages, 176435 bytes).
+Output written on main.pdf (22 pages, 210746 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 36946 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 36959 words of extra memory for PDF output out of 42996 (max. 10000000)
 

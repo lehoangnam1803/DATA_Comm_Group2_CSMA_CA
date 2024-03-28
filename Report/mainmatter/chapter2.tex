@@ -18,7 +18,24 @@ Theo chuẩn IEEE 802.11, kỹ thuật CSMA/CA được sử dụng tại lớp 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.65\linewidth]{figures/Chapter2/MAClayer_k2opt.pdf}
-    %width=
     \caption{Lớp MAC trong chuẩn IEEE 802.11}
     \label{fig:mac}
 \end{figure}
+
+Quá trình tránh va chạm được thực hiện qua 3 bước: cài đặt thời gian chờ liên gói tin (Interframe Space), khung thời gian
+va chạm (Contention window) và xác nhận (Acknowledgments).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.1\linewidth]{figures/Chapter2/Procedure_k2opt.pdf}
+    %width=
+    \caption{Quy trình tránh đụng độ}
+    \label{fig:procedure}
+\end{figure}
+
+Hình ~\ref{fig:procedure} thể hiện quy trình tránh va chạm của kỹ thuật CSMA/CA. Các bước thực hiện được mô tả như sau:
+\begin{enumerate}
+    \item Interframe Space: đầu tiên, trạm phát cảm nhận kênh truyền và khi phát hiện kênh truyền nhàn rỗi (trống), trì hoãn việc truyền dữ liệu một khoảng thời gian. Nguyên nhân là vì tại thời điểm phát hiện kênh nhàn rỗi, có thể có một trạm ở khoảng cách xa hơn bắt đầu truyền dữ liệu gói tin đó chưa đến. IFS là khoảng thời gian chờ nếu có một trạm khác đang truyền. Sau khoảng thời gian IFS mà kênh truyền vẫn nhàn rỗi, dữ liệu bắt đầu được truyền. Biến IFS có thể đánh dấu ưu tiên cho những trạm hoặc loại dữ liệu truyền. Dữ liệu càng được ưu tiên thì IFS càng ngắn.
+    \item Contention window: Khoảng thời gian được chia thành nhiều khe thời gian (slot time). Trạm nào đã sẵn sàng gửi dữ liệu sẽ chọn một vị trí ngẫu nhiên và đó sẽ là thời gian chờ. Số lượng khe thời gian tùy thuộc vào chiến lược lùi lại theo cấp số nhân nhị phân (binary exponential back-off strategy). Điều này có nghĩa là sau mỗi lần trạm phát không tìm được kênh nhàn rỗi, nó sẽ gấp đôi thời gian chờ. Trạm phát sẽ cảm nhận kênh truyền khi thời gian chờ kết thúc. Bộ đếm thời gian chờ chỉ khởi động lại khi đã phát hiện kênh truyền nhàn rỗi.
+    \item Acknowledgments: gói tin sẽ được gửi khi 2 quy trình trên được thỏa yêu cầu. Sau đó, trạm phát sẽ chờ gói tin xác nhận từ phía nhận để tiếp tục kết nối và truyền dữ liệu.
+\end{enumerate}

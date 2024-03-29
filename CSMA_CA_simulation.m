@@ -2,7 +2,7 @@
 
 clear; clc
     % Packet size = 1000 | 2000 | 5000 | 8000 | 10000
-Packet_size = 2000 * 8;% get the packet size in bits (8 bits/packet) %
+Packet_size = 10000 * 8;% get the packet size in bits (8 bits/packet) %
 T = 1000 * 10^-3; % get simulation time in s %
 
 % ====== Strategy
@@ -343,4 +343,4 @@ end
 grid on
 legend('Strategy 1', 'Strategy 2', 'Strategy 3', 'Strategy 4', 'Strategy 5')
 
-matlab2tikz('Packet_16000.tex');
+matlab2tikz('Packet_80000.tex');

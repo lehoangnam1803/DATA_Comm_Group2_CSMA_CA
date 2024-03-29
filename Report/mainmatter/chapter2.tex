@@ -33,9 +33,29 @@ va chạm (Contention window) và xác nhận (Acknowledgments).
     \label{fig:procedure}
 \end{figure}
 
-Hình ~\ref{fig:procedure} thể hiện quy trình tránh va chạm của kỹ thuật CSMA/CA. Các bước thực hiện được mô tả như sau:
+Hình~\ref{fig:procedure} thể hiện quy trình tránh va chạm của kỹ thuật CSMA/CA. Các bước thực hiện được mô tả như sau:
 \begin{enumerate}
     \item Interframe Space: đầu tiên, trạm phát cảm nhận kênh truyền và khi phát hiện kênh truyền nhàn rỗi (trống), trì hoãn việc truyền dữ liệu một khoảng thời gian. Nguyên nhân là vì tại thời điểm phát hiện kênh nhàn rỗi, có thể có một trạm ở khoảng cách xa hơn bắt đầu truyền dữ liệu gói tin đó chưa đến. IFS là khoảng thời gian chờ nếu có một trạm khác đang truyền. Sau khoảng thời gian IFS mà kênh truyền vẫn nhàn rỗi, dữ liệu bắt đầu được truyền. Biến IFS có thể đánh dấu ưu tiên cho những trạm hoặc loại dữ liệu truyền. Dữ liệu càng được ưu tiên thì IFS càng ngắn.
     \item Contention window: Khoảng thời gian được chia thành nhiều khe thời gian (slot time). Trạm nào đã sẵn sàng gửi dữ liệu sẽ chọn một vị trí ngẫu nhiên và đó sẽ là thời gian chờ. Số lượng khe thời gian tùy thuộc vào chiến lược lùi lại theo cấp số nhân nhị phân (binary exponential back-off strategy). Điều này có nghĩa là sau mỗi lần trạm phát không tìm được kênh nhàn rỗi, nó sẽ gấp đôi thời gian chờ. Trạm phát sẽ cảm nhận kênh truyền khi thời gian chờ kết thúc. Bộ đếm thời gian chờ chỉ khởi động lại khi đã phát hiện kênh truyền nhàn rỗi.
     \item Acknowledgments: gói tin sẽ được gửi khi 2 quy trình trên được thỏa yêu cầu. Sau đó, trạm phát sẽ chờ gói tin xác nhận từ phía nhận để tiếp tục kết nối và truyền dữ liệu.
 \end{enumerate}
+
+Để thực hiện mô phỏng cho cơ chế CSMA/CA trong thực tế, một mô hình đại diện gồm 3 trạm thu phát tín hiệu được sử dụng. Cơ chế hoạt động của CSMA/CA có thể được mô tả như sau:
+\begin{enumerate}
+    \item Khi một thiết bị muốn truyền dữ liệu, nó sẽ kiểm tra xem kênh truyền có sẵn hay không (Carrier Sense).
+    \item Nếu kênh truyền rảnh, thiết bị sẽ bắt đầu truyền dữ liệu.
+    \item Phía phát sẽ chờ gói tin xác nhận từ phía thu để quyết định các bước truyền dữ liệu tiếp theo.
+    \item Trong khi đó, các trạm khác tiếp tục quá trình lắng nghe kênh truyền để phát hiện quy trình truyền đã kết thúc.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/Chapter2/csma_ca scheme_k2opt.pdf}
+    %width=
+    \caption{Cơ chế tránh đụng độ với mô hình mạng gồm 3 điểm}
+    \label{fig:csmaca}
+\end{figure}
+
+Hình~\ref{fig:csmaca} mô tả quy trình CSMA/CA với 3 trạm. Giả sử rằng thời điểm Station 1 truyền dữ liệu kênh truyền đang ở trạng thái nhàn rỗi.
+Trong quá trình Station 1 truyền dữ liệu, Station 3 thực hiện việc lắng nghe kênh truyền. Khi Station 1 kết thúc truyền, Station 3 nhận biết kênh truyền 
+đã nhàn rỗi và thực hiện quy trình như mô tả ở hình~\ref{fig:procedure}.

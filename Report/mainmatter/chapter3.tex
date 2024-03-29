@@ -2,3 +2,54 @@
 % Vinh
 \chapter{Kết quả mô phỏng}
 \label{ch::chapter3}
+
+Phần mô phỏng được thực hiện với các kích thước gói tin khác nhau, bao gồm 4 gói tin với kích thước lần lượt là 8kb, 16kb, 40kb và 80kb. Số trạm (Station hoặc Node) sử dụng trong mô phỏng là từ 10 đến 400.
+Có 5 chiến lược (Strategy) được mô phỏng bao gồm:
+\begin{itemize}
+    \item Strategy 1: Tăng CW = CW * 2 khi xảy ra xung đột và đặt lại CW = CWmin khi truyền dữ liệu thành công.
+    \item Strategy 2: Tăng CW = CW + 2 khi xảy ra xung đột và giữ nguyên CW khi truyền dữ liệu thành công.
+    \item Strategy 3: Tăng CW = CW * 2 khi xảy ra xung đột và giữ nguyên CW khi truyền dữ liệu thành công.
+    \item Strategy 4: Tăng CW = CW + 2 khi xảy ra xung đột và giảm CW = CW - 2 khi truyền dữ liệu thành công.
+    \item Strategy 5: Tăng CW = CW * 2 khi xảy ra xung đột và giảm CW = CW - 2 khi truyền dữ liệu thành công.
+\end{itemize}
+
+Từ các kết quả mô phỏng trong hình~\ref{fig:result}, ta có thể rút ra kết luận như sau:
+\begin{itemize}
+    \item Với Packet\_size = 8kb: kết quả mô phỏng cho thấy: cả Strategy 1,2,3,4,5 đều có hiệu suất tốt (trên 50\%) và có thể thấy Strategy 3,5 là tốt nhất.
+    \item Với Packet\_size = 16kb: cả Strategy 1,2,3,4,5 đều có hiệu suất tốt (trên 50\%) và có thể thấy Strategy 3,5 là tốt nhất.
+    \item Với Packet\_size = 40kb: kết quả mô phỏng lúc này khi ta càng nâng cao Packet\_size thì hiệu suất của các Strategy sẽ càng giảm đối với các Strategy 1,3,5 hiểu suất giảm so với Packet\_size = 40kb chỉ trong khoảng 10\% còn Strategy 2,4 hiệu suất bị giảm đến 30\%.
+    \item Với Packet\_size = 80kb: so với Packet\_size = 40000 các Strategy 1,2,3,4,5 có hiệu suất giảm đi khoảng 10\%.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.45\linewidth}
+        \input{figures/Result/Packet_8000.tex}
+        \centering
+        \caption{Packet size = 8000 bits}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\linewidth}
+        \centering
+        \input{figures/Result/Packet_16000.tex}
+        \caption{Packet size = 16000 bits}
+    \end{subfigure}
+
+
+    \begin{subfigure}{0.45\linewidth}
+        \centering
+        \input{figures/Result/Packet_40000.tex}
+        \caption{Packet size = 40000 bits}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\linewidth}
+        \centering
+        \input{figures/Result/Packet_80000.tex}
+        \caption{Packet size = 80000 bits}
+    \end{subfigure}
+
+    \caption{So sánh thời gian gửi thành công gói tin với các kích thước khác nhau và chiến lược khác nhau}
+    \label{fig:result}
+\end{figure}
+
+Utilization time là thời gian để gói tin được chuyển thành công, hay nói cách khác đây là biến thể hiện khả năng sử dụng kênh một cách hiệu quả của mạng, tức là phần trăm thời gian mà kênh được sử dụng để truyền dữ liệu thành công so với tổng thời gian. Giá trị càng cao thường cho thấy mạng hoạt động hiệu quả hơn trong việc truyền dữ liệu.

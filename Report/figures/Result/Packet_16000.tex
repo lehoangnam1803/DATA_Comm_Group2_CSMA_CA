@@ -16,7 +16,7 @@
 width=4.521in,
 height=3.414in,
 at={(0.758in,0.481in)},
-scale only axis,
+scale =0.7,
 xmin=0,
 xmax=400,
 xlabel style={font=\color{white!15!black}},
@@ -27,10 +27,10 @@ ylabel style={font=\color{white!15!black}},
 ylabel={Utilization time (s)},
 axis background/.style={fill=white},
 title style={font=\bfseries},
-title={Packet size:},
+title={},
 xmajorgrids,
 ymajorgrids,
-legend style={legend cell align=left, align=left, draw=white!15!black}
+%legend style={at={(0,0)},anchor=south west, scale=0.5}
 ]
 \addplot [color=mycolor1]
   table[row sep=crcr]{%
@@ -75,7 +75,7 @@ legend style={legend cell align=left, align=left, draw=white!15!black}
 390	0.823999999999999\\
 400	0.845333333333332\\
 };
-\addlegendentry{Strategy 1}
+%\addlegendentry{Strategy 1}
 
 \addplot [color=mycolor2]
   table[row sep=crcr]{%
@@ -120,7 +120,7 @@ legend style={legend cell align=left, align=left, draw=white!15!black}
 390	0.58933333333333\\
 400	0.594666666666663\\
 };
-\addlegendentry{Strategy 2}
+%\addlegendentry{Strategy 2}
 
 \addplot [color=mycolor3]
   table[row sep=crcr]{%
@@ -165,7 +165,7 @@ legend style={legend cell align=left, align=left, draw=white!15!black}
 390	0.919999999999999\\
 400	0.882666666666666\\
 };
-\addlegendentry{Strategy 3}
+%\addlegendentry{Strategy 3}
 
 \addplot [color=mycolor4]
   table[row sep=crcr]{%
@@ -210,7 +210,7 @@ legend style={legend cell align=left, align=left, draw=white!15!black}
 390	0.602666666666663\\
 400	0.58133333333333\\
 };
-\addlegendentry{Strategy 4}
+%\addlegendentry{Strategy 4}
 
 \addplot [color=mycolor5]
   table[row sep=crcr]{%
@@ -255,7 +255,7 @@ legend style={legend cell align=left, align=left, draw=white!15!black}
 390	0.882666666666666\\
 400	0.882666666666666\\
 };
-\addlegendentry{Strategy 5}
+%\addlegendentry{Strategy 5}
 
 \end{axis}
 \end{tikzpicture}%

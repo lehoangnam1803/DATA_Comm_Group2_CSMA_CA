@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.25)  29 MAR 2024 23:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.25)  30 MAR 2024 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1384,7 +1384,7 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T5/lmss/bx/n/15.59996'. Switching off
 (microtype)                protrusion for this font on input line 4.
 
-<figures/Logo_HCMUS.png, id=38, 903.375pt x 739.76375pt>
+<figures/Logo_HCMUS.png, id=30, 903.375pt x 739.76375pt>
 File: figures/Logo_HCMUS.png Graphic file (type png)
 <use figures/Logo_HCMUS.png>
 Package pdftex.def Info: figures/Logo_HCMUS.png  used on input line 8.
@@ -1505,12 +1505,6 @@ l.67 \listoffigures
 
  [5] [6
 
-] (main.lot)
-\tf@lot=\write8
-\openout8 = `main.lot'.
-
- [7] [8
-
 ]
 \openout2 = `mainmatter/chapter1.aux'.
 
@@ -1543,26 +1537,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2] (mainmatter/chapter2.tex
 Ch\uhorn \ohorn ng 2.
-<figures/Chapter2/MAClayer_k2opt.pdf, id=118, 365.6862pt x 152.7306pt>
+<figures/Chapter2/MAClayer_k2opt.pdf, id=102, 410.49359pt x 152.7306pt>
 File: figures/Chapter2/MAClayer_k2opt.pdf Graphic file (type pdf)
 <use figures/Chapter2/MAClayer_k2opt.pdf>
-Package pdftex.def Info: figures/Chapter2/MAClayer_k2opt.pdf  used on input line 20.
-(pdftex.def)             Requested size: 316.06447pt x 132.0146pt.
+Package pdftex.def Info: figures/Chapter2/MAClayer_k2opt.pdf  used on input line 19.
+(pdftex.def)             Requested size: 413.32193pt x 153.79059pt.
 
-Underfull \vbox (badness 1199) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3
 
 
 
  <./figures/Chapter2/MAClayer_k2opt.pdf>]
-<figures/Chapter2/Procedure_k2opt.pdf, id=133, 427.35661pt x 91.54199pt>
+<figures/Chapter2/Procedure_k2opt.pdf, id=119, 427.35661pt x 91.54199pt>
 File: figures/Chapter2/Procedure_k2opt.pdf Graphic file (type pdf)
 <use figures/Chapter2/Procedure_k2opt.pdf>
-Package pdftex.def Info: figures/Chapter2/Procedure_k2opt.pdf  used on input line 30.
+Package pdftex.def Info: figures/Chapter2/Procedure_k2opt.pdf  used on input line 29.
 (pdftex.def)             Requested size: 534.88634pt x 114.58644pt.
 
-Overfull \hbox (48.62872pt too wide) in paragraph at lines 30--32
+Overfull \hbox (48.62872pt too wide) in paragraph at lines 29--31
  [][] 
  []
 
@@ -1574,11 +1568,53 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.59995pt}.
 
 [4 <./figures/Chapter2/Procedure_k2opt.pdf>]
-<figures/Chapter2/csma_ca scheme_k2opt.pdf, id=156, 273.66241pt x 268.36258pt>
+<figures/Chapter2/csma_ca scheme_k2opt.pdf, id=145, 273.66241pt x 268.36258pt>
 File: figures/Chapter2/csma_ca scheme_k2opt.pdf Graphic file (type pdf)
 <use figures/Chapter2/csma_ca scheme_k2opt.pdf>
-Package pdftex.def Info: figures/Chapter2/csma_ca scheme_k2opt.pdf  used on input line 53.
+Package pdftex.def Info: figures/Chapter2/csma_ca scheme_k2opt.pdf  used on input line 52.
 (pdftex.def)             Requested size: 340.37885pt x 333.78987pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 69.
+ (D:\HNAMLE\MiTek\tex/latex/lm\ts1lmss.fd
+File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.59995pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.59995pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-3.59995pt}.
+
+[5{D:/HNAMLE/MiTek/fonts/enc/dvips/lm/lm-ts1.enc} <./figures/Chapter2/csma_ca scheme_k2opt.pdf>]
+<figures/Chapter2/flowchart_k2opt.pdf, id=168, 297.2706pt x 514.56241pt>
+File: figures/Chapter2/flowchart_k2opt.pdf Graphic file (type pdf)
+<use figures/Chapter2/flowchart_k2opt.pdf>
+Package pdftex.def Info: figures/Chapter2/flowchart_k2opt.pdf  used on input line 81.
+(pdftex.def)             Requested size: 247.26138pt x 427.99748pt.
+
+Overfull \hbox (28.44695pt too wide) in paragraph at lines 81--82
+ [][] 
+ []
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T5/lmss/m/n/11.86258'. Switching off
+(microtype)                protrusion for this font on input line 82.
+
+<figures/Chapter2/code_flow.pdf, id=169, 269.3262pt x 497.6994pt>
+File: figures/Chapter2/code_flow.pdf Graphic file (type pdf)
+<use figures/Chapter2/code_flow.pdf>
+Package pdftex.def Info: figures/Chapter2/code_flow.pdf  used on input line 88.
+(pdftex.def)             Requested size: 240.6972pt x 444.81166pt.
+
+Overfull \hbox (21.88277pt too wide) in paragraph at lines 88--89
+ [][] 
+ []
+
 )
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1587,51 +1623,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-3.59995pt}.
 
-[5 <./figures/Chapter2/csma_ca scheme_k2opt.pdf>]
+[6 <./figures/Chapter2/flowchart_k2opt.pdf> <./figures/Chapter2/code_flow.pdf>]
 \openout2 = `mainmatter/chapter3.aux'.
 
- (mainmatter/chapter3.tex [6
-
-
-]
+ (mainmatter/chapter3.tex
 Ch\uhorn \ohorn ng 3.
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 9.
-(D:\HNAMLE\MiTek\tex/latex/lm\ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7{D:/HNAMLE/MiTek/fonts/enc/dvips/lm/lm-ts1.enc}] (figures/Result/Packet_8000.tex)
-Overfull \hbox (37.82744pt too wide) in paragraph at lines 261--29
+(figures/Result/Packet_8000.tex)
+Overfull \hbox (37.82744pt too wide) in paragraph at lines 261--21
  [][] 
  []
 
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/lmss/m/n/11.86258'. Switching off
-(microtype)                protrusion for this font on input line 29.
-
 (figures/Result/Packet_16000.tex)
-Overfull \hbox (37.82744pt too wide) in paragraph at lines 261--35
+Overfull \hbox (37.82744pt too wide) in paragraph at lines 261--27
  [][] 
  []
 
 (figures/Result/Packet_40000.tex)
-Overfull \hbox (37.82744pt too wide) in paragraph at lines 261--42
+Overfull \hbox (37.82744pt too wide) in paragraph at lines 261--34
  [][] 
  []
 
 (figures/Result/Packet_80000.tex)
-Overfull \hbox (37.82744pt too wide) in paragraph at lines 261--48
+Overfull \hbox (37.82744pt too wide) in paragraph at lines 261--40
  [][] 
  []
 
-)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [7
+
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.59995pt, for example:
@@ -1653,6 +1676,18 @@ Ch\uhorn \ohorn ng 4.
 
 
 
+] (main.bbl
+LaTeX Font Info:    Font shape `T5/lmss/m/it' in size <13> not available
+(Font)              Font shape `T5/lmss/m/sl' tried instead on input line 25.
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T5/lmss/m/sl/13'. Switching off
+(microtype)                protrusion for this font on input line 25.
+
+) [11
+
+
 ] (main.aux (mainmatter/chapter1.aux) (mainmatter/chapter3.aux) (mainmatter/chapter4.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1664,20 +1699,20 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DCEF607C4827CAC506900C4E6F4B06B6;1155.
+(rerunfilecheck)             Checksum: 8FB1B0CF99A516D9C7A1E1507CBAB414;879.
  ) 
 Here is how much of TeX's memory you used:
- 47294 strings out of 474486
- 1026543 string characters out of 5757353
- 1961542 words of memory out of 5000000
- 68540 multiletter control sequences out of 15000+600000
- 644129 words of font info for 131 fonts, out of 8000000 for 9000
+ 47334 strings out of 474486
+ 1027613 string characters out of 5757353
+ 1960542 words of memory out of 5000000
+ 68569 multiletter control sequences out of 15000+600000
+ 649806 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,21n,120p,2403b,2432s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/HNAMLE/MiTek/fonts/type1/public/lm/lmmi12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmr12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmss12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmss17.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on main.pdf (22 pages, 291022 bytes).
+ 115i,21n,120p,2403b,2433s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<D:/HNAMLE/MiTek/fonts/type1/public/lm/lmmi12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmr12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmss12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmss17.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmssbx10.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmsso12.pfb>
+Output written on main.pdf (21 pages, 386069 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
+ 264 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
- 34913 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 36955 words of extra memory for PDF output out of 42996 (max. 10000000)
 

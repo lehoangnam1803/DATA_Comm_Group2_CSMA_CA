@@ -7,7 +7,9 @@
 \parindent=10pt
 
 Trong thời đại công nghệ cao hiện nay, kết nối không dây đã trở thành xu hướng và không ngừng được cải tiến. Mạng không dây Wi-Fi là một phần tất yếu trong cuộc sống. Không như các hệ thống mạng có dây, mạng không dây có đặc tính môi trường truyền rất phức tạp và khó kiểm soát. Vì vậy, kỹ thuật 
-CSMA/CA (Carrier Sense Multiple Access) được tạo ra để giảm thiểu tối đa tình trạng xung đột giữa người dùng trong hệ thống mạng. Trong bài báo cáo này, nhóm chúng em thực hiện mô phỏng kỹ thuật CSMA/CA. Mục đích là so sánh thời gian chờ để gửi gói tin giữa các hệ thống mạng với số lượng người dùng khác nhau.
+CSMA/CA (Carrier Sense Multiple Access) được tạo ra để giảm thiểu tối đa tình trạng xung đột giữa người dùng trong hệ thống mạng mà không cần mất thời gian để nhận biết sự đụng độ sau khi nhận gói tin. Trước khi một trạm bắt đầu truyền tín hiệu, nó sẽ thực hiện một quy trình để đảm bảo dữ liệu được truyền sẽ không xảy ra xung đột.
+Một phần quan trọng trong quy trình này được gọi là chiến lược (Strategy). Các chiến lược được đưa ra nhằm cung cấp cho các trạm một khoảng thời gian chờ khác nhau. Trong bài báo cáo này, có 5 chiến lược được đưa ra với các kiểu phân bổ khe thời gian khác nhau.
+Kết quả mô phỏng cho thấy các chiến lược 3, 5 đạt hiệu quả tốt nhất. Hiệu suất của 2 chiến lược này đạt trên 90\% với hệ thống có 400 trạm.
 
 
 % \newpage

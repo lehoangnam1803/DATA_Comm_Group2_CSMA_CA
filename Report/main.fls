@@ -609,10 +609,6 @@ INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
 OUTPUT main.lof
-INPUT .\main.lot
-INPUT .\main.lot
-INPUT main.lot
-OUTPUT main.lot
 INPUT .\mainmatter\chapter1.tex
 INPUT .\mainmatter\chapter1.tex
 OUTPUT mainmatter\chapter1.aux
@@ -644,21 +640,33 @@ INPUT .\figures\Chapter2\csma_ca scheme_k2opt.pdf
 INPUT .\figures\Chapter2\csma_ca scheme_k2opt.pdf
 INPUT .\figures\Chapter2\csma_ca scheme_k2opt.pdf
 INPUT .\figures\Chapter2\csma_ca scheme_k2opt.pdf
+INPUT D:\HNAMLE\MiTek\tex\latex\lm\ts1lmss.fd
+INPUT D:\HNAMLE\MiTek\tex\latex\lm\ts1lmss.fd
+INPUT D:\HNAMLE\MiTek\tex\latex\lm\ts1lmss.fd
+INPUT D:\HNAMLE\MiTek\fonts\tfm\public\lm\ts1-lmss12.tfm
+INPUT D:\HNAMLE\MiTek\fonts\enc\dvips\lm\lm-ts1.enc
+INPUT .\figures\Chapter2\flowchart_k2opt.pdf
+INPUT .\figures\Chapter2\flowchart_k2opt.pdf
+INPUT .\figures\Chapter2\flowchart_k2opt.pdf
+INPUT .\figures\Chapter2\flowchart_k2opt.pdf
+INPUT .\figures\Chapter2\flowchart_k2opt.pdf
+INPUT .\figures\Chapter2\flowchart_k2opt.pdf
+INPUT D:\HNAMLE\MiTek\fonts\tfm\public\lm\t5-lmss12.tfm
+INPUT .\figures\Chapter2\code_flow.pdf
+INPUT .\figures\Chapter2\code_flow.pdf
+INPUT .\figures\Chapter2\code_flow.pdf
+INPUT .\figures\Chapter2\code_flow.pdf
+INPUT .\figures\Chapter2\code_flow.pdf
+INPUT .\figures\Chapter2\code_flow.pdf
 INPUT .\mainmatter\chapter3.tex
 INPUT .\mainmatter\chapter3.tex
 OUTPUT mainmatter\chapter3.aux
 INPUT .\mainmatter\chapter3.tex
 INPUT .\mainmatter\chapter3.tex
 INPUT mainmatter\chapter3.tex
-INPUT D:\HNAMLE\MiTek\tex\latex\lm\ts1lmss.fd
-INPUT D:\HNAMLE\MiTek\tex\latex\lm\ts1lmss.fd
-INPUT D:\HNAMLE\MiTek\tex\latex\lm\ts1lmss.fd
-INPUT D:\HNAMLE\MiTek\fonts\tfm\public\lm\ts1-lmss12.tfm
-INPUT D:\HNAMLE\MiTek\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT .\figures\Result\Packet_8000.tex
 INPUT .\figures\Result\Packet_8000.tex
 INPUT figures\Result\Packet_8000.tex
-INPUT D:\HNAMLE\MiTek\fonts\tfm\public\lm\t5-lmss12.tfm
 INPUT .\figures\Result\Packet_16000.tex
 INPUT .\figures\Result\Packet_16000.tex
 INPUT figures\Result\Packet_16000.tex
@@ -676,6 +684,10 @@ OUTPUT mainmatter\chapter4.aux
 INPUT .\mainmatter\chapter4.tex
 INPUT .\mainmatter\chapter4.tex
 INPUT mainmatter\chapter4.tex
+INPUT .\main.bbl
+INPUT .\main.bbl
+INPUT main.bbl
+INPUT D:\HNAMLE\MiTek\fonts\tfm\public\lm\t5-lmsso12.tfm
 INPUT main.aux
 INPUT .\mainmatter\chapter1.aux
 INPUT .\mainmatter\chapter1.aux
@@ -698,3 +710,5 @@ INPUT D:\HNAMLE\MiTek\fonts\type1\public\lm\lmss17.pfb
 INPUT D:\HNAMLE\MiTek\fonts\type1\public\lm\lmss17.pfb
 INPUT D:\HNAMLE\MiTek\fonts\type1\public\lm\lmssbx10.pfb
 INPUT D:\HNAMLE\MiTek\fonts\type1\public\lm\lmssbx10.pfb
+INPUT D:\HNAMLE\MiTek\fonts\type1\public\lm\lmsso12.pfb
+INPUT D:\HNAMLE\MiTek\fonts\type1\public\lm\lmsso12.pfb

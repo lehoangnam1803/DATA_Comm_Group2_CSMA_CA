@@ -4,14 +4,6 @@
 \label{ch::chapter3}
 
 Phần mô phỏng được thực hiện với các kích thước gói tin khác nhau, bao gồm 4 gói tin với kích thước lần lượt là 8kb, 16kb, 40kb và 80kb. Số trạm (Station hoặc Node) sử dụng trong mô phỏng là từ 10 đến 400.
-Có 5 chiến lược (Strategy) được mô phỏng bao gồm:
-\begin{itemize}
-    \item Strategy 1: Tăng CW = CW * 2 khi xảy ra xung đột và đặt lại CW = CWmin khi truyền dữ liệu thành công.
-    \item Strategy 2: Tăng CW = CW + 2 khi xảy ra xung đột và giữ nguyên CW khi truyền dữ liệu thành công.
-    \item Strategy 3: Tăng CW = CW * 2 khi xảy ra xung đột và giữ nguyên CW khi truyền dữ liệu thành công.
-    \item Strategy 4: Tăng CW = CW + 2 khi xảy ra xung đột và giảm CW = CW - 2 khi truyền dữ liệu thành công.
-    \item Strategy 5: Tăng CW = CW * 2 khi xảy ra xung đột và giảm CW = CW - 2 khi truyền dữ liệu thành công.
-\end{itemize}
 
 Từ các kết quả mô phỏng trong hình~\ref{fig:result}, ta có thể rút ra kết luận như sau:
 \begin{itemize}
@@ -48,7 +40,7 @@ Từ các kết quả mô phỏng trong hình~\ref{fig:result}, ta có thể rú
         \caption{Packet size = 80000 bits}
     \end{subfigure}
 
-    \caption{So sánh thời gian gửi thành công gói tin với các kích thước khác nhau và chiến lược khác nhau}
+    \caption{Thời gian gửi thành công gói tin với các kích thước và chiến lược khác nhau}
     \label{fig:result}
 \end{figure}
 

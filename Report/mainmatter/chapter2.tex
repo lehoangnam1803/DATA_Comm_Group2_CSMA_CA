@@ -13,7 +13,7 @@ Access Collision Detect) của chuẩn 802.3 (cho Ethernet). Điểm khác ở �
 dữ liệu khi bên kia sẵn sàng nhận và không truyền hay nhận dữ liệu nào khác trong lúc đó, đây còn gọi 
 là nguyên tắc LBT (listening before talking) – nghe trước khi nói.
 
-Theo chuẩn IEEE 802.11, kỹ thuật CSMA/CA được sử dụng tại lớp MAC bởi hàm Distributed Coordination Function (DCF) như trong hình~\ref{fig:mac}.
+Theo chuẩn IEEE 802.11, kỹ thuật CSMA/CA được sử dụng tại lớp Data link, phân lớp MAC bởi hàm Distributed Coordination Function (DCF) như trong hình~\ref{fig:mac}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\linewidth]{figures/Chapter2/MAClayer_k2opt.pdf}
@@ -49,7 +49,7 @@ Hình~\ref{fig:procedure} thể hiện quy trình tránh va chạm của kỹ th
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.7\linewidth]{figures/Chapter2/csma_ca scheme_k2opt.pdf}
+    \includegraphics[width=0.6\linewidth]{figures/Chapter2/csma_ca scheme_k2opt.pdf}
     %width=
     \caption{Cơ chế tránh đụng độ với mô hình mạng gồm 3 điểm}
     \label{fig:csmaca}
@@ -94,4 +94,5 @@ xung đột, có 5 chiến lược (Back-off Strategy) được đưa ra như sa
     \label{fig:csmacaflowchart}
 \end{figure}
 
-
+Tỷ lệ good\_time / total\_time trong thuật toán CSMA/CA thường được sử dụng để đo lường hiệu suất sử dụng kênh của mạng. Trong đó, good\_time là tổng thời gian mà các gói tin được truyền thành công trên kênh,
+total\_time là tổng thời gian mà các gói tin cần để được truyền, bao gồm cả thời gian chờ đợi và truyền thực tế.

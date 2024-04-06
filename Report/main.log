@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.25)  30 MAR 2024 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.25)  31 MAR 2024 21:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1572,7 +1572,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/Chapter2/csma_ca scheme_k2opt.pdf Graphic file (type pdf)
 <use figures/Chapter2/csma_ca scheme_k2opt.pdf>
 Package pdftex.def Info: figures/Chapter2/csma_ca scheme_k2opt.pdf  used on input line 52.
-(pdftex.def)             Requested size: 340.37885pt x 333.78987pt.
+(pdftex.def)             Requested size: 291.75752pt x 286.10912pt.
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 69.
  (D:\HNAMLE\MiTek\tex/latex/lm\ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1704,13 +1704,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  47334 strings out of 474486
  1027613 string characters out of 5757353
- 1960542 words of memory out of 5000000
+ 1959542 words of memory out of 5000000
  68569 multiletter control sequences out of 15000+600000
  649806 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,21n,120p,2403b,2433s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/HNAMLE/MiTek/fonts/type1/public/lm/lmmi12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmr12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmss12.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmss17.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmssbx10.pfb><D:/HNAMLE/MiTek/fonts/type1/public/lm/lmsso12.pfb>
-Output written on main.pdf (21 pages, 386069 bytes).
+Output written on main.pdf (21 pages, 386524 bytes).
 PDF statistics:
  264 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
